@@ -26,4 +26,4 @@ elif number == 4:
         y=int(input("Enter Breadth "))
         print ("Area =",x*y)
     elif quadrilateral_type=="rhombus":
-        x=
+        x=dsufadoubfojud
