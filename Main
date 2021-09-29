@@ -1,0 +1,29 @@
+print("Polygon area calculator")
+number = int(input("How many sides does the polygon have? "))
+if number < 3:
+    print ("Area of a 1D figure is non existant")
+elif number == 3:
+    print("Triangle Area Calculator")
+    a =[1,2,3]
+    m=0
+    for y in range(3):
+        m=m+1
+        print ("Enter Side number ",m);a[y] = int(input())
+    s=(a[0]+a[1]+a[2])/2
+    if a[0]+a[1]<=a[2] or a[0]+a[2]<=a[1] or a[2]+a[1]<=a[0]:
+        print("This Triangle Is Not Possible")
+    else:
+        x=((s-a[0])*(s-a[1])*(s-a[2])*s)**0.5
+        print("Area of triangle is ", x)
+elif number == 4:
+    print ("Quadrilateral area Calculator")
+    quadrilateral_type = str(input("What is the type of quadrilateral?(square/rectangle/rhombus/kite/trapezium/not defined) "))
+    if quadrilateral_type == "square":
+        x=int(input("Enter side "))
+        print ("Area =",x**2)
+    elif quadrilateral_type == "rectangle":
+        x=int(input("Enter lenght "))
+        y=int(input("Enter Breadth "))
+        print ("Area =",x*y)
+    elif quadrilateral_type=="rhombus":
+        x=
